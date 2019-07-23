@@ -3,6 +3,8 @@ import login from "./login";
 import project from "./project";
 import projectMembers from "./project-members";
 import smartcontracts from "./project-smartcontracts";
+import contracts from "./project-contracts";
+import transfers from "./project-transfers";
 
 
 const addRoutes = (app) => {
@@ -11,7 +13,8 @@ const addRoutes = (app) => {
     app.use('/project', project);
     app.use('/project-members', projectMembers);
     app.use('/project-smartcontracts', smartcontracts);
-    // app.use(authTokenResolver);
+    app.use('/project-contracts', contracts);
+    app.use('/project-transfers', transfers);
 };
 
 export default addRoutes;
