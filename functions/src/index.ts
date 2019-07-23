@@ -5,6 +5,3 @@ admin.initializeApp();
 import app from "./components/express/app";
 
 exports.app = functions.https.onRequest(app);
-exports.test = functions.https.onRequest((req, res) => {
-    res.send("working")
-});

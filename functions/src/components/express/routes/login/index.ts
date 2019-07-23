@@ -1,14 +1,15 @@
 import {Router} from 'express';
-import {db} from "../../../admin";
-import collectionToArray from "../../utils/collectionToArray";
+import {getArray} from "../../utils/collectionToArray";
+import {getById} from "../utils/getById";
+import smartContractRouter from "../project-smartcontracts";
 
 const loginRouter: Router = Router();
+
 /* GET users listing. */
 loginRouter.post('/', async function (req, res, next) {
-    const {email, encryptedData: publicKey}: { [key: string]: any } = req.body;
-    const usersObject: { [key: string]: any } = await db.ref('/users')
-    const users = collectionToArray(usersObject);
-    const user = users.find(v => email === v.email && publicKey === v.publicKey)
+    const {email, encryptedData: signature} = req.body;
+    const users = await getArray('/users');
+    const user = users.find(v => email === v.email && signature === v.signature)
     if (user) {
         res.json({
             authToken: user.token,

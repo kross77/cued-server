@@ -1,28 +1,22 @@
 import {Router} from 'express';
-import {db} from "../../../admin";
-import {getArray} from "../../utils/collectionToArray";
 import authTokenResolver from "../../resolvers/authTokenResolver";
+import {addItem} from "../utils/addItem";
+import {getList} from "../utils/getList";
 
 const projectRouter: Router = Router();
 projectRouter.use(authTokenResolver)
 /* POST project listing. */
-projectRouter.post('/', async function (req, res, next) {
-    const project = req.body;
-    const {key: id} = await db.ref('/projects').push(project);
-    res.json({
-        id,
-        responseCode: 'ok'
-    })
-});
 
-/* GET list. */
-projectRouter.get('/', async function (req, res, next) {
-    const projects = await getArray('projects');
-    console.log('GET PROJECTS')
-    res.json({
-        projects,
-        responseCode: 'ok'
-    })
-});
+addItem({
+    router: projectRouter,
+    dbPath: '/projects'
+})
+
+getList({
+    router: projectRouter,
+    dbPath: '/projects',
+    name: 'projects',
+    mapFn: (projects, {user}) => projects.filter(v => v.ownerId === user.id)
+})
 
 export default projectRouter;

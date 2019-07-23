@@ -26,7 +26,7 @@ export const authTokenResolver = async (req, res, next) => {
             const user = users.find( v => v.token === idToken);
             console.log({user, idToken})
             if(user){
-                req.params.user = user;
+                req.user = user;
                 next()
                 return;
             }

@@ -1,4 +1,3 @@
-import authTokenResolver from "../resolvers/authTokenResolver";
 import userRegister from "./user-register";
 import login from "./login";
 import project from "./project";
@@ -13,6 +12,6 @@ const addRoutes = (app) => {
     app.use('/project-members', projectMembers);
     app.use('/project-smartcontracts', smartcontracts);
     // app.use(authTokenResolver);
-}
+};
 
 export default addRoutes;
