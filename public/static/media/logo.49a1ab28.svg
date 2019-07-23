@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="261px" height="59px" viewBox="0 0 261 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <style>
+            @font-face {
+            font-family: 'Cuprum-Regular';
+            src: url('/fonts/Cuprum-Regular.eot');
+            src: local('☺'), url('/fonts/Cuprum-Regular.woff') format('woff'), url('/fonts/Cuprum-Regular.ttf') format('truetype'), url('/fonts/Cuprum-Regular.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'MyriadPro-Regular';
+            src: url('/fonts/MyriadPro-Regular.eot');
+            src: local('☺'), url('/fonts/MyriadPro-Regular.woff') format('woff'), url('/fonts/MyriadPro-Regular.ttf') format('truetype'), url('/fonts/MyriadPro-Regular.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            }
+        </style>
+    </defs>
+    <g id="logo"  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop:-Login" transform="translate(-381.000000, -343.000000)">
+            <g id="content" transform="translate(245.000000, 336.000000)">
+                <g id="logo" transform="translate(135.000000, 0.000000)">
+                    <text class="fill" id="Курьерская-служба-в" font-family="MyriadPro-Regular, Myriad Pro" font-size="19" font-weight="normal" fill="#00B6F7">
+                        <tspan x="142.5" y="42"></tspan>
+                        <tspan x="22.401" y="61">Курьерская служба в Минске</tspan>
+                    </text>
+                    <text  id="M-DOSTAVKA.BY" class="fill" font-family="Cuprum-Regular" font-size="40" font-weight="normal" fill="#00B6F7">
+                        <tspan x="21.5" y="36">M-DOSTAVKA.BY</tspan>
+                    </text>
+                    <g id="logo-image"  class="fill" transform="translate(0.000000, 7.000000)" fill="#11ADE8">
+                        <polygon id="Rectangle" transform="translate(10.066109, 5.949859) rotate(14.000000) translate(-10.066109, -5.949859) " points="0.362912732 3.43423286 18.4720815 3.25375545 19.7693055 8.46548539 1.66013679 8.6459628"></polygon>
+                        <polygon id="Rectangle-Copy" transform="translate(12.856184, 16.440796) rotate(14.000000) translate(-12.856184, -16.440796) " points="6.00113823 14.0382394 18.4140062 13.6316236 19.7112303 18.8433536 7.29836229 19.2499694"></polygon>
+                        <polygon id="Rectangle-Copy-2" transform="translate(14.491244, 26.013378) rotate(14.000000) translate(-14.491244, -26.013378) " points="9.37605641 23.6416575 18.3195779 23.1733677 19.6064319 28.3434351 10.6732805 28.8533874"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

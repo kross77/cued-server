@@ -1,0 +1,355 @@
+{
+  "firebaseConfig": {
+    "apiKey": "AIzaSyBPYzZljmaKR7KUE3EDCso6qXOMkwAz0-k",
+    "authDomain": "mobi-etu.firebaseapp.com",
+    "databaseURL": "https://mobi-etu.firebaseio.com",
+    "projectId": "mobi-etu",
+    "storageBucket": "",
+    "messagingSenderId": "97143209530"
+  },
+  "adminConfig": {
+    "appName": "Mobi Etu",
+    "slogan": "made with love for a better firebase.",
+    "design": {
+      "sidebarBg": "sidebar-1.jpg",
+      "dataActiveColor": "rose",
+      "dataBackgroundColor": "black"
+    },
+    "showItemIDs": false,
+    "allowedUsers": null,
+    "allowGoogleAuth": true,
+    "fieldBoxName": "Fields",
+    "maxNumberOfTableHeaders": 5,
+    "prefixForJoin": [
+      "-event"
+    ],
+    "showSearchInTables": true,
+    "methodOfInsertingNewObjects": "push",
+    "goDirectlyInTheInsertedNode": false,
+    "urlSeparator": "+",
+    "urlSeparatorFirestoreSubArray": "~",
+    "googleMapsAPIKey": "YOUR_KEY",
+    "fieldsTypes": {
+      "photo": [
+        "photo",
+        "image"
+      ],
+      "dateTime": [
+        "end",
+        "start"
+      ],
+      "map": [
+        "map",
+        "latlng",
+        "location"
+      ],
+      "textarea": [
+        "description"
+      ],
+      "html": [
+        "content"
+      ],
+      "radio": [
+        "radio",
+        "radiotf",
+        "featured"
+      ],
+      "checkbox": [
+        "checkbox"
+      ],
+      "dropdowns": [
+        "status",
+        "dropdowns"
+      ],
+      "file": [
+        "video"
+      ],
+      "rgbaColor": [
+        "rgba"
+      ],
+      "hexColor": [
+        "color"
+      ],
+      "relation": [
+        "type",
+        "creator"
+      ],
+      "iconmd": [
+        "icon"
+      ],
+      "iconfa": [
+        "iconfa"
+      ],
+      "iconti": [
+        "iconti"
+      ],
+      "iconio": [
+        "iconio"
+      ]
+    },
+    "optionsForDateTime": [
+      {
+        "key": "end",
+        "dateFormat": "YYYY-MM-DD",
+        "timeFormat": true,
+        "saveAs": "x",
+        "locale": "es"
+      },
+      {
+        "key": "start",
+        "dateFormat": "X",
+        "timeFormat": "HH:mm",
+        "saveAs": "x"
+      }
+    ],
+    "optionsForSelect": [
+      {
+        "key": "dropdowns",
+        "options": [
+          "new",
+          "processing",
+          "rejected",
+          "completed"
+        ]
+      },
+      {
+        "key": "checkbox",
+        "options": [
+          "Skopje",
+          "Belgrade",
+          "New York"
+        ]
+      },
+      {
+        "key": "status",
+        "options": [
+          "just_created",
+          "confirmed",
+          "canceled"
+        ]
+      },
+      {
+        "key": "radio",
+        "options": [
+          "no",
+          "maybe",
+          "yes"
+        ]
+      },
+      {
+        "key": "radiotf",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "key": "featured",
+        "options": [
+          "true",
+          "false"
+        ]
+      }
+    ],
+    "optionsForRelation": [
+      {
+        "display": "name",
+        "isValuePath": true,
+        "key": "creator",
+        "path": "/users",
+        "produceRelationKey": false,
+        "relationJoiner": "-",
+        "relationKey": "type_eventid",
+        "value": "name"
+      },
+      {
+        "display": "name",
+        "key": "eventtype",
+        "path": "",
+        "isValuePath": false,
+        "value": "name",
+        "produceRelationKey": true,
+        "relationJoiner": "-",
+        "relationKey": "type_eventid"
+      }
+    ],
+    "paging": {
+      "pageSize": 20,
+      "finite": true,
+      "retainLastPage": false
+    },
+    "hiddenKeys": [
+      "keyToHide",
+      "anotherKeyToHide",
+      "email"
+    ],
+    "previewOnlyKeys": [
+      "previewOnlyKey",
+      "anotherPreviewOnlyKye",
+      "name"
+    ]
+  },
+  "navigation": [
+    {
+      "link": "/",
+      "name": "Dashboard",
+      "schema": null,
+      "icon": "home",
+      "path": "",
+      "isIndex": true
+    },
+    {
+      "link": "fireadmin",
+      "path": "events",
+      "name": "Events",
+      "icon": "event",
+      "tableFields": [
+        "name",
+        "description"
+      ],
+      "subMenus": [
+        {
+          "link": "fireadmin",
+          "path": "events/skopje/items",
+          "name": "Skopje",
+          "icon": "event",
+          "tableFields": [
+            "name",
+            "description"
+          ]
+        },
+        {
+          "link": "fireadmin",
+          "path": "events/sofia/items",
+          "name": "Sofia",
+          "icon": "event",
+          "tableFields": [
+            "name",
+            "description"
+          ]
+        },
+        {
+          "link": "fireadmin",
+          "path": "events/belgrade/items",
+          "name": "Belgrade",
+          "icon": "event",
+          "tableFields": [
+            "name",
+            "description"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "fireadmin",
+      "path": "clubs",
+      "name": "Clubs",
+      "icon": "room",
+      "tableFields": [
+        "name",
+        "description"
+      ],
+      "subMenus": [
+        {
+          "link": "fireadmin",
+          "path": "clubs/skopje/items",
+          "name": "Skopje",
+          "icon": "event",
+          "tableFields": [
+            "name",
+            "description"
+          ]
+        },
+        {
+          "link": "fireadmin",
+          "path": "clubs/sofia/items",
+          "name": "Sofia",
+          "icon": "event",
+          "tableFields": [
+            "name",
+            "description"
+          ]
+        },
+        {
+          "link": "fireadmin",
+          "path": "clubs/belgrade/items",
+          "name": "Belgrade",
+          "icon": "event",
+          "tableFields": [
+            "name",
+            "description"
+          ]
+        }
+      ]
+    },
+    {
+      "link": "fireadmin",
+      "path": "userdata/{useruuid}",
+      "name": "My Profile",
+      "icon": "perm_identity",
+      "tableFields": []
+    },
+    {
+      "link": "fireadmin",
+      "path": "bookings",
+      "name": "Bookings",
+      "icon": "done",
+      "tableFields": []
+    },
+    {
+      "link": "fireadmin",
+      "path": "static",
+      "name": "Cities & Genres",
+      "icon": "location_city",
+      "tableFields": [
+        "name",
+        "description"
+      ]
+    },
+    {
+      "link": "firestoreadmin",
+      "path": "events",
+      "name": "FireStore Events",
+      "icon": "event",
+      "tableFields": [
+        "name"
+      ]
+    },
+    {
+      "link": "link",
+      "path": "http://mobidonia.com",
+      "name": "Mobidonia.com",
+      "icon": "web",
+      "tableFields": [
+        "name"
+      ]
+    },
+    {
+      "link": "push",
+      "path": "",
+      "name": "Push notification",
+      "icon": "speaker_notes",
+      "tableFields": []
+    }
+  ],
+  "pushSettings": {
+    "remoteSetup": false,
+    "remotePath": "pushSettings",
+    "pushType": "expo",
+    "Firebase_AuthorizationPushKey": "AIzaSyCFUf7fspu61J9YsWE-2A-vI9of1ihtSiE",
+    "pushTopic": "news",
+    "oneSignal_REST_API_KEY": "",
+    "oneSignal_APP_KEY": "",
+    "included_segments": "Active Users",
+    "firebasePathToTokens": "/expoPushTokens",
+    "saveNotificationInFireStore": true
+  },
+  "userDetails": {},
+  "remoteSetup": true,
+  "remoteLiveConfig": true,
+  "remotePath": "admins/mobietu",
+  "allowSubDomainControl": false,
+  "firestoreDynamic": true,
+  "subDomainControlHolder": "admins/",
+  "firestoreConfigPath": "config/firestore"
+}

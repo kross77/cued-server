@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "cued-music",
+    "development": "cued-music"
+  }
+}
