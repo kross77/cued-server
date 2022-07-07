@@ -10,7 +10,7 @@
     "firebase-paginator": "github:mobidonia/firebase-paginator",
     "halogen": "yuanyan/halogen#pull/35/head",
     "md5": "^2.2.1",
-    "moment": "^2.19.2",
+    "moment": "^2.29.4",
     "react": "16.7.0",
     "react-color": "^2.13.5",
     "react-datetime": "^2.11.1",
